@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration & KYC - InvestingHubPK</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        body { 
+            font-family: 'Poppins', sans-serif; 
+            background-color: #f4f7f6; 
+            color: #333; 
+            padding: 20px;
+        }
+        
+        .urdu-font {
+            font-family: 'Noto Nastaliq Urdu', serif;
+            direction: rtl;
+        }
+
+        .form-container {
+            max-width: 500px;
+            background: white;
+            margin: 0 auto;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            border-top: 5px solid #4b0082;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .header h2 { color: #4b0082; font-size: 22px; }
+
+        .input-group {
+            margin-bottom: 15px;
+            text-align: right;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #555;
+            font-size: 14px;
+        }
+
+        .input-group input, .input-group select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            font-size: 15px;
+            outline: none;
+            transition: 0.3s;
+        }
+
+        .input-group input:focus {
+            border-color: #4b0082;
+            box-shadow: 0 0 5px rgba(75,0,130,0.2);
+        }
+
+        /* رجسٹر بٹن */
+        .submit-btn {
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(135deg, #4b0082, #6a1b9a);
+            color: white;
+            border: 2px solid #ffd700;
+            border-radius: 12px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 10px;
+            box-shadow: 0 5px 15px rgba(75,0,130,0.2);
+        }
+
+        .submit-btn:active { transform: scale(0.98); }
+
+        .note {
+            font-size: 12px;
+            color: #777;
+            text-align: center;
+            margin-top: 15px;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <div class="header">
+            <h2 class="urdu-font">اکاؤنٹ رجسٹریشن اور KYC</h2>
+            <p style="font-size: 12px; color: #888;">براہ کرم اپنی درست معلومات فراہم کریں</p>
+        </div>
+
+        <form action="#" method="POST">
+            <div class="input-group urdu-font">
+                <label>مکمل نام (شناختی کارڈ کے مطابق)</label>
+                <input type="text" name="fullname" placeholder="نام لکھیں" required>
+            </div>
+
+            <div class="input-group urdu-font">
+                <label>موبائل نمبر (WhatsApp)</label>
+                <input type="tel" name="phone" placeholder="03XXXXXXXXX" required>
+            </div>
+
+            <div class="input-group urdu-font">
+                <label>CNIC نمبر</label>
+                <input type="text" name="cnic" placeholder="XXXXX-XXXXXXX-X" required>
+            </div>
+
+            <div class="input-group urdu-font">
+                <label>شہر کا نام</label>
+                <input type="text" name="city" placeholder="اپنا شہر لکھیں" required>
+            </div>
+
+            <div class="input-group urdu-font">
+                <label>پیمنٹ وصول کرنے کا ذریعہ</label>
+                <select name="payment_method">
+                    <option value="easypaisa">EasyPaisa (ایزی پیسہ)</option>
+                    <option value="jazzcash">JazzCash (جیز کیش)</option>
+                    <option value="bank">Bank Transfer (بینک اکاؤنٹ)</option>
+                </select>
+            </div>
+
+            <div class="input-group urdu-font">
+                <label>ایزی پیسہ / جیز کیش / بینک نمبر</label>
+                <input type="text" name="account_no" placeholder="اکاؤنٹ نمبر لکھیں" required>
+            </div>
+
+            <div class="input-group urdu-font">
+                <label>پاس ورڈ منتخب کریں</label>
+                <input type="password" name="password" placeholder="پاس ورڈ" required>
+            </div>
+
+            <button type="submit" class="submit-btn urdu-font">رجسٹریشن مکمل کریں</button>
+        </form>
+
+        <p class="note urdu-font">
+            نوٹ: آپ کی معلومات مکمل طور پر محفوظ ہیں۔ ہم KYC صرف آپ کی پیمنٹ کی حفاظت کے لیے کرتے ہیں۔
+        </p>
+    </div>
+
+</body>
+</html>

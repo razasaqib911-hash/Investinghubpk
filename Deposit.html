@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deposit - InvestingHubPK</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        body { 
+            font-family: 'Poppins', sans-serif; 
+            background-color: #f4f7f6; 
+            color: #333; 
+        }
+
+        .urdu-font { font-family: 'Noto Nastaliq Urdu', serif; line-height: 2.5; }
+
+        header { 
+            background: #4b0082; 
+            color: white; 
+            padding: 20px; 
+            text-align: center;
+            border-bottom: 4px solid #ffd700;
+        }
+
+        .container { padding: 20px; max-width: 500px; margin: 0 auto; }
+
+        .payment-card {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border-left: 5px solid #4b0082;
+        }
+
+        .payment-card h3 { color: #4b0082; margin-bottom: 10px; font-size: 18px; }
+        .payment-card p { font-size: 14px; margin: 5px 0; color: #555; }
+        .copy-btn {
+            background: #eee;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 12px;
+            cursor: pointer;
+            float: right;
+        }
+
+        .deposit-form {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .deposit-form h2 { text-align: center; color: #4b0082; margin-bottom: 20px; }
+
+        label { display: block; margin-bottom: 8px; font-weight: 600; font-size: 14px; }
+        
+        input, select {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .submit-btn {
+            background: #4b0082;
+            color: white;
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .submit-btn:hover { background: #6a1b9a; }
+
+        .notice {
+            background: #fff3cd;
+            color: #856404;
+            padding: 15px;
+            border-radius: 10px;
+            font-size: 13px;
+            margin-top: 20px;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 class="urdu-font">رقم جمع کروائیں (Deposit)</h1>
+    </header>
+
+    <div class="container">
+        
+        <div class="payment-card">
+            <h3>EasyPaisa / JazzCash</h3>
+            <p>Account Name: <strong>Investing Hub Official</strong></p>
+            <p>Account Number: <strong>03001234567</strong></p>
+        </div>
+
+        <div class="payment-card">
+            <h3>Bank Transfer (Meezan Bank)</h3>
+            <p>Account Title: <strong>InvestingHub PK</strong></p>
+            <p>IBAN: <strong>PK21MEZN00XXXXXXXXXXXX</strong></p>
+        </div>
+
+        <div class="deposit-form">
+            <h2 class="urdu-font">اپنی تفصیلات درج کریں</h2>
+            <form action="submit_deposit.php" method="POST">
+                
+                <label class="urdu-font">انویسٹمنٹ پلان منتخب کریں:</label>
+                <select name="plan" required>
+                    <option value="golden">گولڈن پلان (20%)</option>
+                    <option value="premium">پریمیم پلان (30%)</option>
+                    <option value="diamond">ڈائمنڈ وی آئی پی پلان (45%)</option>
+                </select>
+
+                <label class="urdu-font">رقم (PKR):</label>
+                <input type="number" name="amount" placeholder="کم از کم 100,000" min="100000" required>
+
+                <label class="urdu-font">ٹرانزیکشن آئی ڈی (TID):</label>
+                <input type="text" name="tid" placeholder="Enter Transaction ID" required>
+
+                <button type="submit" class="submit-btn urdu-font">درخواست بھیجیں 🚀</button>
+            </form>
+        </div>
+
+        <div class="notice urdu-font">
+            ⚠️ <strong>ضروری نوٹ:</strong> رقم بھیجنے کے بعد ٹرانزیکشن آئی ڈی لازمی درج کریں۔ ہماری ٹیم 30 منٹ سے 2 گھنٹے کے اندر آپ کا ڈپازٹ منظور کر لے گی۔
+        </div>
+
+    </div>
+
+</body>
+</html>

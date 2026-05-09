@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Details - InvestingHubPK</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Poppins', sans-serif; background-color: #f4f7f6; color: #333; padding: 20px; }
+        .urdu-font { font-family: 'Noto Nastaliq Urdu', serif; direction: rtl; text-align: right; }
+
+        .container {
+            max-width: 500px;
+            background: white;
+            margin: 0 auto;
+            padding: 25px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            border-top: 5px solid #4b0082;
+        }
+
+        .header { text-align: center; margin-bottom: 20px; }
+        .header h2 { color: #4b0082; }
+
+        /* Payment Card Style */
+        .payment-method {
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 15px;
+            margin-bottom: 15px;
+            border: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .details { text-align: left; }
+        .details b { color: #4b0082; font-size: 16px; }
+        .details p { font-size: 14px; color: #666; }
+
+        .icon { font-size: 24px; }
+
+        .instruction-box {
+            background: #fff3cd;
+            color: #856404;
+            padding: 15px;
+            border-radius: 10px;
+            font-size: 13px;
+            margin: 20px 0;
+            line-height: 1.6;
+        }
+
+        .next-btn {
+            display: block;
+            width: 100%;
+            padding: 16px;
+            background: linear-gradient(135deg, #4b0082, #6a1b9a);
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: bold;
+            border: 2px solid #ffd700;
+            box-shadow: 0 5px 15px rgba(75,0,130,0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header urdu-font">
+            <h2>پیمنٹ کی تفصیلات</h2>
+            <p style="font-size: 13px;">اپنے منتخب کردہ پیکج کی رقم نیچے دیے گئے کسی بھی اکاؤنٹ پر بھیجیں</p>
+        </div>
+
+        <div class="instruction-box urdu-font">
+            ⚠️ <b>ضروری نوٹ:</b> رقم بھیجنے کے بعد ٹرانزیکشن کا اسکرین شاٹ لازمی محفوظ کر لیں، اگلی اسکرین پر آپ کو رسید اپ لوڈ کرنی ہوگی۔
+        </div>
+
+        <div class="payment-method">
+            <span class="icon">📱</span>
+            <div class="details">
+                <b>EasyPaisa</b>
+                <p>0300-1234567</p>
+                <p>Account Title: <b>Ubaid Raza</b></p>
+            </div>
+        </div>
+
+        <div class="payment-method">
+            <span class="icon">💸</span>
+            <div class="details">
+                <b>JazzCash</b>
+                <p>0301-7654321</p>
+                <p>Account Title: <b>Ubaid Raza</b></p>
+            </div>
+        </div>
+
+        <div class="payment-method">
+            <span class="icon">🏦</span>
+            <div class="details">
+                <b>Bank Alfalah / UBL</b>
+                <p>1234-5678-9012-3456</p>
+                <p>Title: <b>Investing Hub PK</b></p>
+            </div>
+        </div>
+
+        <div class="urdu-font" style="margin-top: 25px;">
+            <p style="font-size: 14px; margin-bottom: 15px; color: #444;">اگر آپ پیمنٹ کر چکے ہیں، تو رسید اپ لوڈ کرنے کے لیے نیچے بٹن دبائیں:</p>
+            <a href="Deposit.html" class="next-btn">رسید (Screenshot) اپ لوڈ کریں</a>
+        </div>
+    </div>
+
+</body>
+</html>

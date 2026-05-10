@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InvestingHubPK - Premium</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        body { 
+            font-family: 'Poppins', sans-serif; 
+            background-color: #ffffff; 
+            color: #333; 
+            overflow-x: hidden; 
+        }
+        
+        .urdu-font {
+            font-family: 'Noto Nastaliq Urdu', serif;
+            line-height: 2.2;
+        }
+
+        .top-ticker {
+            background: #4b0082;
+            color: #ffffff;
+            padding: 12px 0;
+            border-bottom: 2px solid #ffd700;
+            overflow: hidden;
+        }
+
+        .ticker-content {
+            display: flex;
+            animation: scroll-left 60s linear infinite;
+            white-space: nowrap;
+        }
+
+        @keyframes scroll-left {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+
+        .plan-item {
+            margin: 0 40px; 
+            display: inline-block;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .invest-note {
+            color: #ffd700; 
+            font-size: 14px;
+            margin: 0 25px;
+            font-family: 'Poppins', sans-serif;
+            display: inline-block;
+        }
+
+        header { 
+            padding: 15px 20px; 
+            display: flex; 
+            align-items: center; 
+            background: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        .logo-placeholder { 
+            width: 48px; height: 48px; 
+            margin-right: 12px;
+            background: linear-gradient(135deg, #4b0082, #6a1b9a);
+            border-radius: 12px;
+            display: flex; align-items: center; justify-content: center;
+        }
+        
+        .logo-placeholder::before { content: '📊'; font-size: 22px; }
+        .site-name { font-size: 22px; font-weight: 800; color: #4b0082; }
+
+        .hero-image-box { 
+            width: 90%; height: 220px; 
+            margin: 20px auto; 
+            background: #f0f0f0;
+            border-radius: 15px; 
+            display: flex; align-items: center; justify-content: center;
+            border: 2px dashed #4b0082;
+            position: relative; overflow: hidden;
+        }
+
+        .withdraw-ticker {
+            background: #f9f9f9;
+            padding: 10px 0;
+            color: #2e7d32;
+            font-weight: 600;
+            font-size: 13px;
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+            overflow: hidden;
+        }
+
+        .withdraw-content {
+            display: flex;
+            animation: scroll-left 45s linear infinite;
+            white-space: nowrap;
+        }
+
+        .content-area { padding: 30px 20px; text-align: center; }
+        .content-area h2 { color: #4b0082; font-size: 26px; margin-bottom: 10px; }
+        .content-area p { color: #666; line-height: 1.6; max-width: 600px; margin: 0 auto; }
+
+        .button-container { 
+            display: flex; 
+            justify-content: space-between; 
+            gap: 10px; 
+            padding: 20px; 
+            max-width: 500px; 
+            margin: 0 auto; 
+        }
+        
+        .btn { 
+            flex: 1; 
+            padding: 16px 5px; 
+            border-radius: 12px; 
+            text-align: center; 
+            text-decoration: none; 
+            font-weight: bold; 
+            font-size: 14px; 
+            transition: all 0.3s ease;
+        }
+        
+        .btn-work { background: #4b0082; color: white; border: 2px solid #ffd700; }
+        .btn-work:hover { background: #6a1b9a; transform: translateY(-2px); }
+        
+        .btn-contact { background: #fff; color: #4b0082; border: 2px solid #4b0082; }
+        .btn-contact:hover { background: #f0f0f0; }
+
+    </style>
+</head>
+<body>
+
+    <div class="top-ticker urdu-font">
+        <div class="ticker-content">
+            <span class="plan-item">💼 گولڈن پلان: 20 فیصد تک متوقع منافع</span>
+            <span class="invest-note">✨ Kamran Shah invested Rs. 1,50,000 in Golden Plan</span>
+            <span class="invest-note">✨ M. Junaid invested Rs. 2,20,000 in Golden Plan</span>
+            
+            <span class="plan-item">📈 پریمیم پلان: 30 فیصد تک ماہانہ منافع</span>
+            <span class="invest-note">✨ Malik Faisal invested Rs. 4,50,000 in Premium</span>
+            <span class="invest-note">✨ Dr. Salman invested Rs. 6,80,000 in Premium</span>
+            
+            <span class="plan-item">💎 ڈائمنڈ وی آئی پی پلان: 45 فیصد منافع میں شراکت</span>
+            <span class="invest-note">✨ Sheikh Zahid invested Rs. 12,00,000 in VIP Diamond</span>
+            <span class="invest-note">✨ Haji Farooq invested Rs. 8,50,000 in VIP Diamond</span>
+            
+            <span class="plan-item">🤲 انویسٹنگ ہب پی کے: آپ کی حلال انویسٹمنٹ، ہماری برکت!</span>
+            <span class="invest-note">✨ Rizwan Ali invested Rs. 3,00,000</span>
+            <span class="invest-note">✨ Mrs. Tanveer invested Rs. 5,00,000</span>
+            
+            <span class="plan-item">🚀 ابھی جوائن کریں اور اپنا ماہانہ منافع بڑھائیں!</span>
+            
+            <span class="plan-item">💼 گولڈن پلان: 20 فیصد تک متوقع منافع</span>
+            <span class="invest-note">✨ Abdullah Khan invested Rs. 1,80,000</span>
+            <span class="invest-note">✨ Waqas Jatt invested Rs. 2,50,000</span>
+            
+            <span class="plan-item">📈 پریمیم پلان: 30 فیصد تک ماہانہ منافع</span>
+            <span class="invest-note">✨ Usman Ghani invested Rs. 7,20,000</span>
+            <span class="invest-note">✨ Arslan Ahmed invested Rs. 5,50,000</span>
+            
+            <span class="plan-item">💎 ڈائمنڈ وی آئی پی پلان: 45 فیصد منافع میں شراکت</span>
+            <span class="invest-note">✨ Ch. Munir invested Rs. 10,00,000</span>
+            <span class="invest-note">✨ Nasir Shah invested Rs. 9,50,000</span>
+        </div>
+    </div>
+
+    <header>
+        <div class="brand-box" style="display: flex; align-items: center;">
+            <div class="logo-placeholder"></div>
+            <div class="site-name">InvestingHubPK</div>
+        </div>
+    </header>
+
+    <div class="hero-image-box">
+        <span class="urdu-font" style="color:#aaa; font-weight:bold;">[ یہاں آپ کی دکان یا اسٹاک کی تصویر ہوگی ]</span>
+    </div>
+
+    <div class="withdraw-ticker">
+        <div class="withdraw-content">
+            ✅ Ali Raza: Rs. 12,500 | ✅ Farhan Khan: Rs. 8,200 | ✅ Aziz Ahmed: Rs. 15,000 | ✅ Usman Butt: Rs. 5,400 | ✅ Kamran: Rs. 20,000 | ✅ Sajid Ali: Rs. 11,300 | ✅ Mehmood: Rs. 18,500 | ✅ Hassan: Rs. 25,000 |
+        </div>
+    </div>
+
+    <div class="content-area urdu-font">
+        <h2>حقیقی بزنس، حقیقی منافع</h2>
+        <p>ہماری کمپنی آپ کے سرمائے کو مختلف فزیکل کاروباروں میں لگا کر آپ کو ماہانہ بنیادوں پر حلال اور بہترین منافع فراہم کرتی ہے۔ ہم شفافیت اور دیانتداری میں یقین رکھتے ہیں۔</p>
+    </div>
+
+    <div class="button-container urdu-font">
+        <a href="details.html" class="btn btn-work">بزنس ماڈل 🚀</a>
+        <a href="https://wa.me/923000000000" class="btn btn-contact">رابطہ کریں</a>
+    </div>
+
+</body>
+</html>
